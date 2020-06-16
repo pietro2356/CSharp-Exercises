@@ -15,24 +15,39 @@ namespace CLExercises
         //ES N°1
         public static double PerimetroTrapRett(double base1, double base2, double altezza)
         {
-            throw new NotImplementedException();
+            if (base1 > 0 && base2 > 0 && altezza > 0)
+            {
+                return ((base1 + base2) * altezza) / 2;
+            } else{ throw new ArithmeticException(); }
         }
 
         //ES N°2
         public static double PerimetroTriangRett(double cat1, double cat2)
         {
-            throw new NotImplementedException();
+            if (cat1 > 0 && cat2 > 0)
+            {
+                double ipotenusa = Math.Sqrt(Math.Pow(cat1, 2) + Math.Pow(cat2, 2));
+                return ipotenusa + cat1 + cat2;
+            } else { throw new ArithmeticException(); }
         }
 
         public static double AreaTriangRett(double cat1, double cat2)
         {
-            throw new NotImplementedException();
+            if (cat1 > 0 && cat2 > 0)
+            {
+                return (cat1 * cat2) / 2;
+            }
+            else { throw new ArithmeticException(); }
         }
 
         //ES N°3
         public static double AreaCerchio(double raggio)
         {
-            throw new NotImplementedException();
+            if (raggio > 0)
+            {
+                return Math.PI * Math.Pow(raggio, 2);
+            }
+            else { throw new ArithmeticException(); }
         }
 
         //ES N°4
